@@ -1,0 +1,37 @@
+Creating Reactivities App
+
+>dotnet new sln
+>dotnet new webapi -n API -controllers
+>dotnet new classlib -n Domain
+>dotnet new classlib -n Application
+>dotnet new classlib -n Persistence
+>dotnet sln add API
+>dotnet sln add Application
+>dotnet sln add Domain
+>dotnet sln add Persistence
+>view under solution explorer in vscode
+>add package references by right cliking API (sample) add project
+
+>add dbcontext for sqlite
+>add connection string 
+>dotnet tool install --global dotnet-ef --version 9.0.0
+>dotnet ef
+>dotnet ef migrations add InitialCreate -p Persistence -s API
+>dotnet ef database update -p Persistence -s API
+>dotnet ef database drop -p Persistence -s API (delete database because theres no seeding yet created)
+
+>seeding data to database
+>create 'DbInitializer.cs' under persistence
+>go to downloaded resources 'CourseAssets' 
+>search seeddata.txt
+>copy and paste data to dbinitializer
+>added app.Services.CreateScope in API Program.cs
+>cd API 'dotnet watch'
+
+>create api controllers in API project
+>import reactivities.postman collection from courseassets to postman collection import
+
+>saving codes to source control
+>create gitignore file 
+>dotnet new gitignore in new terminal
+>add appsettings json and reactivities db to gitignore
