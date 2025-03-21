@@ -35,3 +35,52 @@ Creating Reactivities App
 >create gitignore file 
 >dotnet new gitignore in new terminal
 >add appsettings json and reactivities db to gitignore
+>commit and create github repo
+>git remote add origin https://github.com/devdeb26/DotNETCore_React_ReactivitiesApp.git
+
+>create react skeleton
+>install vite 
+>npm create vite@latest in reactivities solution
+>client is the name of the project
+>cd client - npm install
+>npm run dev
+>add extension - ES7+React/Redux/React-Native snippets
+>add extension - eslint
+
+>fetching data from api
+>unblock cors policy
+>added builder.services.addcors();
+>added app.useCors()
+
+>creating an Activity type in Typescript
+>types are like dtos
+>created "lib" folder inside "src" then added folder "types"
+>converted json response to typescript then put it to index.d.ts
+
+>using react developer tools
+>install react dev tools browser chrome extension
+
+>adding material ui
+>install material ui at mui.com/core
+>npm install @mui/material @emotion/react @emotion/styled
+>npm install @fontsource/roboto
+>added import fontsource to main.tsx file
+>npm install @mui/icons-material
+>turned on link editing on vscode: settings> link 
+
+>adding https support to the client app
+>cd client / npm install -D vite-plugin-mkcert
+>mkcert is a simple tool for making locally trusted developement certificates. it requires no configuration
+>import mkcert from 'vite-plugin-mkcert'; in vite.config.ts
+
+>adding axios for data fetching
+>npm install axios
+
+
+
+
+
+
+
+
+	
