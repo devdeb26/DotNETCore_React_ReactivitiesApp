@@ -38,6 +38,7 @@ Creating Reactivities App
 >commit and create github repo
 >git remote add origin https://github.com/devdeb26/DotNETCore_React_ReactivitiesApp.git
 
+>section 3
 >create react skeleton
 >install vite 
 >npm create vite@latest in reactivities solution
@@ -76,7 +77,39 @@ Creating Reactivities App
 >adding axios for data fetching
 >npm install axios
 
+>section 4
+>clean architecture
+>cqrs - command query responsibility segragation
+>install mediatr from nuget in Application project
+>created handler
+>add mediatr as a service in program.cs
+>make controllers thinner 
+>by adding mediator in baseapicontroller
+>adding a mediator handler for creating an activity
+>created 'commands' under Activities application project
+>adding a mediator handler for editing an activity
+>add automapper install it under nuget to application project
+>add automapper on service
+>using cancellationtoken-meaning any request can be cancelled like delete/updating it
+can be cancelled by the user and that cancel will propagate to database request status.
+>setup debugger
+>create launch.json file
 
+>section 5
+>folder structure in React - follow reactivities
+>create navbar
+><CssBaseline /> added this to remove spaces out of navbar
+>styling navbar
+>adding dashboard
+>adding activity card
+>to loop through an array use map like  "activities.map"
+>creating activity details (view)
+>copy courseassets entire image to public folder under client
+>selecting an individual activity to view
+>create activity form
+>useState hook form for create activity form
+>update activity form to handlesubmit
+>form submission react but local only first then change code for server requests
 
 
 
