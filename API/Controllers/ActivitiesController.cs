@@ -38,7 +38,7 @@ namespace API.Controllers
             return NoContent(); //no need to return anything because the user knows what data is selected for the edit/update
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteActivity(string id)
         {
             await mediator.Send(new DeleteActivity.Command { Id = id });
